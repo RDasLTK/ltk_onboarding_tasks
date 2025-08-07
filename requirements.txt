@@ -1,0 +1,12 @@
+langchain
+python-dotenv
+langchain_community
+pypdf
+arxiv
+pymupdf
+wikipedia
+langgraph
+langsmith
+langchain_groq
+langchain_tavily
+streamlit

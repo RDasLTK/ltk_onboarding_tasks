@@ -10,7 +10,7 @@ This project demonstrates a chatbot application built using Python, Streamlit, a
 ## Installation
 
 1. Clone the repository:
-   ```bash
+   ```
    git clone <this repository url>
    cd <your local folder> # ltk_onboarding_tasks
 

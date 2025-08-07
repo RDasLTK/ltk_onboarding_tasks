@@ -10,7 +10,7 @@ This project demonstrates a chatbot application built using Python, Streamlit, a
 ## Installation
 
 1. Clone the repository:
-   ```bash
+   ```
    git clone <this repository url>
    cd <your local folder> # ltk_onboarding_tasks
 
@@ -25,7 +25,9 @@ pip install -r requirements.txt
 ```
 4. Set up environment variables:  
    1. Create a .env file in the root directory.
-   2. Add your API keys and other configurations as required.
+   2. Add the below API Keys into the .env file
+      1. GROQ_API_KEY
+      2. TAVILY_API_KEY
 
 ## Usage
 1. Run the Streamlit app:  

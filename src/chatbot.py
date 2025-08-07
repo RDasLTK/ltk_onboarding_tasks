@@ -133,13 +133,12 @@ class ChatbotLangGraph():
         ]
         tool_node = ToolNode(tools=external_tools,handle_tool_errors=self.handle_value_error())
         self.graph_builder.add_node("Chatbot", self.chatbot)
-        self.graph_builder.add_node('External_Tools', tool_node)
+        self.graph_builder.add_node('tools', tool_node)
         self.graph_builder.add_conditional_edges(
             "Chatbot",
-            tools_condition,
-            {"External_Tools": "External_Tools", END: END}
+            tools_condition
         )
-        self.graph_builder.add_edge("External_Tools", "Chatbot")
+        self.graph_builder.add_edge("tools", "Chatbot")
         self.graph_builder.add_edge(START, "Chatbot")
         return self.graph_builder.compile(checkpointer=self.memory)
 
